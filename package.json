@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "deploy": "npm version patch && npm run deploy:app",
-    "deploy:app": "npm version patch --prefix public && npm run build && npm publish ./dist --access public",
+    "deploy:app": "npm version patch --prefix src && npm run build && npm publish ./dist/angular-typescript-app --access public",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
